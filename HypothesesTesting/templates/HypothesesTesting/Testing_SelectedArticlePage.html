@@ -1,0 +1,738 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% block content %}
+<!-- ------------------------------- Header -------------------------------- -->
+<div class="outer-head-div">
+    <span class="inner-head-div-text new-title">
+        <!-- Title -->
+    </span>
+
+    <div class="inner-head-div-logo">
+        <img src="{% static 'Hypothesentesten/hd-logo-sw.png' %}" class="logo"/>
+    </div>
+</div>
+<hr style="margin-top:1px; margin-bottom:15px;">
+<!-- ------------------------------- Header -------------------------------- -->
+
+
+<h1>
+    Ihr ausgewähltes Suchergebnis
+</h1>
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 1 and player.article1ChosenByChance == 0 and player.article1ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 1
+</p>
+
+{% elif player.selectedArticle == 1 and player.article1ChosenByMajority == 1 %}
+
+<p>
+    Artikel 1 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 1 and player.article1ChosenByChance == 1 %}
+
+<p>
+    Artikel 1 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 1 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 1 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 2 and player.article2ChosenByChance == 0 and player.article2ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 2
+</p>
+
+{% elif player.selectedArticle == 2 and player.article2ChosenByMajority == 1 %}
+
+<p>
+    Artikel 2 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 2 and player.article2ChosenByChance == 1 %}
+
+<p>
+    Artikel 2 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 2 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 2 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 3 and player.article3ChosenByChance == 0 and player.article3ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 3
+</p>
+
+{% elif player.selectedArticle == 3 and player.article3ChosenByMajority == 1 %}
+
+<p>
+    Artikel 3 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 3 and player.article3ChosenByChance == 1 %}
+
+<p>
+    Artikel 3 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 3 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 3 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 4 and player.article4ChosenByChance == 0 and player.article4ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 4
+</p>
+
+{% elif player.selectedArticle == 4 and player.article4ChosenByMajority == 1 %}
+
+<p>
+    Artikel 4 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 4 and player.article4ChosenByChance == 1 %}
+
+<p>
+    Artikel 4 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 4 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 4 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 5 and player.article5ChosenByChance == 0 and player.article5ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 5
+</p>
+
+{% elif player.selectedArticle == 5 and player.article5ChosenByMajority == 1 %}
+
+<p>
+    Artikel 5 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 5 and player.article5ChosenByChance == 1 %}
+
+<p>
+    Artikel 5 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 5 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 5 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 6 and player.article6ChosenByChance == 0 and player.article6ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 6
+</p>
+
+{% elif player.selectedArticle == 6 and player.article6ChosenByMajority == 1 %}
+
+<p>
+    Artikel 6 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 6 and player.article6ChosenByChance == 1 %}
+
+<p>
+    Artikel 6 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 6 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 6 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 7 and player.article7ChosenByChance == 0 and player.article7ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 7
+</p>
+
+{% elif player.selectedArticle == 7 and player.article7ChosenByMajority == 1 %}
+
+<p>
+    Artikel 7 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 7 and player.article7ChosenByChance == 1 %}
+
+<p>
+    Artikel 7 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 7 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 7 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 8 and player.article8ChosenByChance == 0 and player.article8ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 8
+</p>
+
+{% elif player.selectedArticle == 8 and player.article8ChosenByMajority == 1 %}
+
+<p>
+    Artikel 8 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 8 and player.article8ChosenByChance == 1 %}
+
+<p>
+    Artikel 8 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 8 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 8 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 9 and player.article9ChosenByChance == 0 and player.article9ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 9
+</p>
+
+{% elif player.selectedArticle == 9 and player.article9ChosenByMajority == 1 %}
+
+<p>
+    Artikel 9 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 9 and player.article9ChosenByChance == 1 %}
+
+<p>
+    Artikel 9 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 9 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 9 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 10 and player.article10ChosenByChance == 0 and player.article10ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 10
+</p>
+
+{% elif player.selectedArticle == 10 and player.article10ChosenByMajority == 1 %}
+
+<p>
+    Artikel 10 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 10 and player.article10ChosenByChance == 1 %}
+
+<p>
+    Artikel 10 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 10 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 10 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 11 and player.article11ChosenByChance == 0 and player.article11ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 11
+</p>
+
+{% elif player.selectedArticle == 11 and player.article11ChosenByMajority == 1 %}
+
+<p>
+    Artikel 11 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 11 and player.article11ChosenByChance == 1 %}
+
+<p>
+    Artikel 11 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 11 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 11 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 12 and player.article12ChosenByChance == 0 and player.article12ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 12
+</p>
+
+{% elif player.selectedArticle == 12 and player.article12ChosenByMajority == 1 %}
+
+<p>
+    Artikel 12 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 12 and player.article12ChosenByChance == 1 %}
+
+<p>
+    Artikel 12 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 12 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 12 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 13 and player.article13ChosenByChance == 0 and player.article13ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 13
+</p>
+
+{% elif player.selectedArticle == 13 and player.article13ChosenByMajority == 1 %}
+
+<p>
+    Artikel 13 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 13 and player.article13ChosenByChance == 1 %}
+
+<p>
+    Artikel 13 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 13 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 13 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 14 and player.article14ChosenByChance == 0 and player.article14ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 14
+</p>
+
+{% elif player.selectedArticle == 14 and player.article14ChosenByMajority == 1 %}
+
+<p>
+    Artikel 14 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 14 and player.article14ChosenByChance == 1 %}
+
+<p>
+    Artikel 14 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 14 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 14 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 15 and player.article15ChosenByChance == 0 and player.article15ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 15
+</p>
+
+{% elif player.selectedArticle == 15 and player.article15ChosenByMajority == 1 %}
+
+<p>
+    Artikel 15 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 15 and player.article15ChosenByChance == 1 %}
+
+<p>
+    Artikel 15 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 15 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 15 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 16 and player.article16ChosenByChance == 0 and player.article16ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 16
+</p>
+
+{% elif player.selectedArticle == 16 and player.article16ChosenByMajority == 1 %}
+
+<p>
+    Artikel 16 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 16 and player.article16ChosenByChance == 1 %}
+
+<p>
+    Artikel 16 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 16 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 16 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 17 and player.article17ChosenByChance == 0 and player.article17ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 17
+</p>
+
+{% elif player.selectedArticle == 17 and player.article17ChosenByMajority == 1 %}
+
+<p>
+    Artikel 17 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 17 and player.article17ChosenByChance == 1 %}
+
+<p>
+    Artikel 17 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 17 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 17 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 18 and player.article18ChosenByChance == 0 and player.article18ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 18
+</p>
+
+{% elif player.selectedArticle == 18 and player.article18ChosenByMajority == 1 %}
+
+<p>
+    Artikel 18 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 18 and player.article18ChosenByChance == 1 %}
+
+<p>
+    Artikel 18 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 18 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 18 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 19 and player.article19ChosenByChance == 0 and player.article19ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 19
+</p>
+
+{% elif player.selectedArticle == 19 and player.article19ChosenByMajority == 1 %}
+
+<p>
+    Artikel 19 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 19 and player.article19ChosenByChance == 1 %}
+
+<p>
+    Artikel 19 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 19 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 19 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 20 and player.article20ChosenByChance == 0 and player.article20ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 20
+</p>
+
+{% elif player.selectedArticle == 20 and player.article20ChosenByMajority == 1 %}
+
+<p>
+    Artikel 20 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 20 and player.article20ChosenByChance == 1 %}
+
+<p>
+    Artikel 20 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 20 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 20 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 21 and player.article21ChosenByChance == 0 and player.article21ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 21
+</p>
+
+{% elif player.selectedArticle == 21 and player.article21ChosenByMajority == 1 %}
+
+<p>
+    Artikel 21 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 21 and player.article21ChosenByChance == 1 %}
+
+<p>
+    Artikel 21 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 21 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 21 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 22 and player.article22ChosenByChance == 0 and player.article22ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 22
+</p>
+
+{% elif player.selectedArticle == 22 and player.article22ChosenByMajority == 1 %}
+
+<p>
+    Artikel 22 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 22 and player.article22ChosenByChance == 1 %}
+
+<p>
+    Artikel 22 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 22 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 22 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 23 and player.article23ChosenByChance == 0 and player.article23ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 23
+</p>
+
+{% elif player.selectedArticle == 23 and player.article23ChosenByMajority == 1 %}
+
+<p>
+    Artikel 23 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 23 and player.article23ChosenByChance == 1 %}
+
+<p>
+    Artikel 23 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 23 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 23 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+
+{% endif %}
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+{% if player.selectedArticle == 24 and player.article24ChosenByChance == 0 and player.article24ChosenByMajority == 0 and player.lastArticleChosenByTimeout == 0 %}
+
+<p>
+    Artikel 24
+</p>
+
+{% elif player.selectedArticle == 24 and player.article24ChosenByMajority == 1 %}
+
+<p>
+    Artikel 24 - weil die Mehrheit dafür stimmte
+</p>
+
+{% elif player.selectedArticle == 24 and player.article24ChosenByChance == 1 %}
+
+<p>
+    Artikel 24 - zufällig ausgewählt aus einer ihrer drei Entscheidungen
+</p>
+
+{% elif player.selectedArticle == 24 and player.lastArticleChosenByTimeout == 1 %}
+
+<p>
+    Artikel 24 - zufällig ausgewählt, da Sie sich nicht rechtzeitig entschieden haben
+</p>
+
+{% endif %}
+
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+
+
+
+
+
+<!-- ------------------- Next-Button und Bottom-Line ---------------- -->
+
+<br>
+<button class="otree-btn-next btn btn-primary">Weiter</button>
+
+<hr>
+<p> <a href="mailto: lob@stud.uni-heidelberg.de" target="_blank">Aaron Lob</a>, Universität Heidelberg  - 2020</p>
+
+{% endblock %}
