@@ -1,0 +1,73 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block scripts %}
+<script>
+
+
+    let history = document.getElementById('history');
+    let sendbutton = document.getElementById('sendbutton');
+    let hiddenCounter = document.getElementById('hiddenCounter');
+
+    function liveRecv(data) {
+        history.innerHTML = data;
+        // document.getElementById("history").setAttribute("style","display:inline;");
+
+
+    };
+
+    sendbutton.onclick = function () {
+        liveSend(1);
+        // document.querySelector('[name=decided]').value = true;
+    }
+
+
+
+
+
+
+
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- ------------------------------- Header -------------------------------- -->
+<div class="outer-head-div">
+    <span class="inner-head-div-text new-title">
+        <!-- Title -->
+    </span>
+
+    <div class="inner-head-div-logo">
+        <img src="{% static 'Hypothesentesten/hd-logo-sw.png' %}" class="logo"/>
+    </div>
+</div>
+<hr style="margin-top:1px; margin-bottom:15px;">
+<!-- ------------------------------- Header -------------------------------- -->
+
+
+
+
+<div style="display:inline;">
+    Anzahl der Teilnehmer*innen, die sich schon entschieden haben:<br>
+</div>
+
+<div style="display:inline;" id="history">
+
+</div>
+
+
+<input type="number" id="hiddenCounter" value="0" style="display: none;">
+
+<button type="button" onclick="send()">Send</button>
+
+
+
+
+
+<br>
+<button class="otree-btn-next btn btn-primary" id="sendbutton">Weiter</button>
+
+<hr>
+<p> <a href="mailto: lob@stud.uni-heidelberg.de" target="_blank">Aaron Lob</a>, Universität Heidelberg  - 2020</p>
+
+{% endblock %}
